@@ -4,9 +4,9 @@ Requerimientos
 2.
 - cada sensor tansmita cada 10 milisegundos DONE
 - cada sensor haga maximo 1000 transmisiones de mensajes tras lo cual finalice la simulacion FINALIZA EL SCRIPT ESTA BIEN ASI?
-- si se acaba la bateria del sensor fin de simulacion
+- si se acaba la bateria del sensor fin de simulacion DONE tambien finalize el script 
 3.
-- activas medicion de consumo de energia en nodos de sensado
+- activas medicion de consumo de energia en nodos de sensado DONE
 - llevar registro de consumo de energia
 6.
 - Simulacion con Zigbee
