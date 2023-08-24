@@ -2,7 +2,7 @@ Requerimientos
 1.
 - 17 Nodos adicionales, total 21
 2.
-- cada sensor tansmita cada 10 milisegundosADD README
+- cada sensor tansmita cada 10 milisegundos DONE
 - cada sensor haga maximo 1000 transmisiones de mensajes tras lo cual finalice la simulacion
 - si se acaba la bateria del sensor fin de simulacion
 3.
