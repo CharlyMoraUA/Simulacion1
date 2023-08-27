@@ -2,8 +2,8 @@ List of parameters
 ------------------------------------------
 device_type:2
 device_id:34
-device_longitude:-74.06201362609863
-device_latitude:4.600038289412312
+device_longitude:-74.06205654144287
+device_latitude:4.6000810665130905
 device_elevation:0.0
 device_radius:10.0
 device_hide:0
