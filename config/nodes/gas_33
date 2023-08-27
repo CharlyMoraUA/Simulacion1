@@ -1,10 +1,10 @@
 List of parameters
 ------------------------------------------
 device_type:2
-device_id:8
-device_longitude:-74.05673503875732
-device_latitude:4.5544794416388825
+device_id:33
+device_longitude:-73.98056030273438
+device_latitude:4.569580339748264
 device_elevation:0.0
 device_radius:10.0
 device_hide:0
-natural_event_file_name:evg3.evt
+natural_event_file_name:evg2.evt
