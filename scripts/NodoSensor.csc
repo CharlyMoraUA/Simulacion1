@@ -1,8 +1,8 @@
 set ant 999
 set ite 0 
-set batCritial 10
-set messagesLimit 100
-battery set 1000
+set batCritial 4
+set messagesLimit 999
+battery set 100
 
 atget id id
 getpos2 lonSen latSen
