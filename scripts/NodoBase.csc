@@ -4,13 +4,22 @@ send p
 
 loop
 read mens
-rdata mens tipo valor1 valor2
+rdata mens tipo valor1 valor2 valor3
 if( tipo == "alerta")
-   cprint "Alerta en: longitud" valor1 ", latitud: " valor2
+   cprint "Alerta en: longitud" valor1 ", latitud: " valor2 ", id: " valor3
 end
 
-if(tipo =="critico")
-   cprint "Nodo descargado o agotado en: longitud" valor1 ", latitud: " valor2
+if(tipo =="criticoM")
+   cprint "Nodo agotado en: longitud" valor1 ", latitud: " valor2 ", id: " valor3
+   data p "stop"
+   send p
+   wait 1000
+   cprint "para nodo base"
+   stop
+end
+
+if(tipo =="criticoB")
+   cprint "Nodo descargado en: longitud" valor1 ", latitud: " valor2 ", id: " valor3
    data p "stop"
    send p
    wait 1000
