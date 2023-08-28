@@ -2,8 +2,8 @@ CupCarbon v. IoT 5.0
 ----------------
 name:Simulacion1
 zoom:6
-centerposition_la:4.543019480760612
-centerposition_lo:-74.00099873542786
+centerposition_la:4.542848358698809
+centerposition_lo:-73.99808049201965
 map:0
 display_details:true
 draw_radio_links:true
@@ -11,7 +11,7 @@ draw_sensor_arrows:true
 radio_links_color:0
 draw_marker_arrows:false
 display_rl_distance:false
-propagation:true
+propagation:false
 display_marker_distance:false
 display_radio_messages:true
 draw_script_file_name:true
