@@ -10,10 +10,9 @@ getpos2 lonSen latSen
 loop
 wait 1
 read mens
-rdata mens tipo valor
+rdata mens tipo val1 val2 val3
 if(tipo=="stop")
-   data mens "stop"
-   send mens * valor
+   send mens * val3
    cprint "para sensor: " id
    wait 1000
    stop
@@ -22,9 +21,9 @@ end
 if((tipo=="hola") && (ant == 999))
    inc ite
    print "ite: "ite
-   set ant valor
+   set ant val1
    data mens tipo id
-   send mens * valor
+   send mens * val1
 end
 
 battery bat
@@ -35,17 +34,22 @@ if((tipo=="alerta") && (bat>batCritial) && (ite<messagesLimit))
 end
 
 if (ite>=messagesLimit)
-   inc ite
-   cprint "Nodo agotado id: " id
-   data mens "criticoM" lonSen latSen id
-   send mens ant
+   cprint "************************* Nodo agotado id: " id "*************************"
+   data p "stop" lonSen latSen id
+   send p
+   wait 1000
+   cprint "para nodo " id
+   stop
 end
 
 
 if(bat<=batCritial)
-   cprint "Nodo sin bateria id: " id "En iteracion: " ite
-   data mens "criticoB" lonSen latSen id
-   send mens ant
+   cprint "+++++++++++++++++++ Nodo sin bateria id: " id "En iteracion: " ite " +++++++++++++++++++"
+   data p "stop" lonSen latSen id
+   send p
+   wait 1000
+   cprint "para nodo " id
+   stop
 end
 
 delay 10

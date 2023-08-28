@@ -9,17 +9,8 @@ if( tipo == "alerta")
    cprint "Alerta en: longitud" valor1 ", latitud: " valor2 ", id: " valor3
 end
 
-if(tipo =="criticoM")
-   cprint "Nodo agotado en: longitud" valor1 ", latitud: " valor2 ", id: " valor3
-   data p "stop"
-   send p
-   wait 1000
-   cprint "para nodo base"
-   stop
-end
-
-if(tipo =="criticoB")
-   cprint "Nodo descargado en: longitud" valor1 ", latitud: " valor2 ", id: " valor3
+if(tipo =="stop")
+   cprint "Nodo descargado en: longitud" valor1 ", latitud: " valor2 ", id nodo: " valor3
    data p "stop"
    send p
    wait 1000
